@@ -8,7 +8,7 @@
 
 .navbar {
     display: grid;
-    grid-template-columns: 60px 60px 3fr 60px 60px 20px 60px;
+    grid-template-columns: 60px 60px 3fr 60px 60px 20px 80px;
     padding: 25px;
 }
 
@@ -42,17 +42,84 @@
 }
 
 #google-grid-img {
-    transform: translate(0%, -20%);
+    transform: translate(0%, -30%);
     max-width: 150%;
     max-height: auto;
 }
 
 #sign-in-button {
     grid-column-start: 7;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 13px;
 }
 
-#sign-in-button-img {
-    transform: translate(5%, -40%);
-    max-width: 250%;
-    max-height: auto;
+#sign-in-div {
+    transform: translate( 30%, -25%);
+    background-color: rgb(19, 89, 194);
+    border-radius: 2px;
+}
+
+#sign-in-text {
+    text-align: center;
+    color: white;
+    padding: 8px;
+}
+
+#logo-grid {
+    display: grid;
+    margin-top: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+        'logo logo logo'
+        'text text text'
+        'search none lucky';
+}
+
+#logo-div {
+    position: relative;
+    transform: translate(-5%, 0%);
+    /* grid-row-start: 1; */
+    grid-area: logo;
+}
+
+#input-div {
+    position: relative;
+    /* grid-row-start: 2; */
+    grid-area: text;
+    height: 100%;
+}
+
+#search-input {
+    position: relative;
+    transform: translate(-20%, 0%);
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 150%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.main-button-div {
+    background-color: lightgray;
+    padding: 9px;
+    border-radius: 3px;
+}
+
+#search-button {
+    grid-area: search;
+}
+
+#search-div {
+    margin-right: -25px;
+}
+
+#lucky-button {
+    position: relative;
+    grid-area: lucky;
+}
+
+#lucky-div {
+    margin-left: -25px;
 }
